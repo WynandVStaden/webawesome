@@ -42,6 +42,7 @@ Web Awesome follows <a href="https://semver.org/" class="appearance-plain">Seman
 
 - Fixed a bug in `<wa-select multiple>` where custom tags from `getTag` were squeezed beside the selection count [issue:2913] [pr:2917]
 - Fixed a bug in `<wa-select multiple>` where tags for options added after the first render were misaligned in Firefox [issue:2909] [pr:2917]
+- Fixed `<wa-textarea>` returning the vertical offset as the horizontal scroll position [issue:2919] [pr:2922]
 - Fixed a bug in `<wa-page>` and `<wa-tab-group>` where they did not render on first frame and their first render was delayed [pr:2932]
 - Fixed an issue where `disable-sticky` on `<wa-page>` was not documented. [pr:2932]
 - Fixed a regression in implicit form submission where pressing [[Enter]] submitted the form even when its submit button was disabled [pr:2861]
