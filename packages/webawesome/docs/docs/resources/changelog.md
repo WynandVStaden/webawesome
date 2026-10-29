@@ -43,6 +43,8 @@ Web Awesome follows <a href="https://semver.org/" class="appearance-plain">Seman
 - Fixed a bug in `<wa-page>` and `<wa-tab-group>` where they did not render on first frame and their first render was delayed [pr:2932]
 - Fixed an issue where `disable-sticky` on `<wa-page>` was not documented. [pr:2932]
 - Fixed a regression in implicit form submission where pressing [[Enter]] submitted the form even when its submit button was disabled [pr:2861]
+- Fixed a bug in `<wa-radio-group>` where disabled fieldsets cleared the selected radio's checked state or prevented the group from being re-enabled [issue:2907] [pr:2912]
+- Fixed a bug in `<wa-radio-group>` where `focus()` and label clicks failed to focus an enabled radio when the checked radio was disabled [issue:2907] [pr:2912]
 - Fixed a bug in `animateWithClass` internal helper which could occasionally leave animations in indeterminate states. [pr:2870]
 - Fixed a bug in `<wa-copy-button>` where a missing `from` target copied the fallback `value` instead of stopping after `wa-error` [issue:2891] [pr:2911]
 - Fixed a bug in `<wa-dropdown>` where the initial focused element would get lost. [pr:2886]
